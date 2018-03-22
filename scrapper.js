@@ -38,7 +38,7 @@ function function1(){
 //       message: "Which artist would you like to search?"}
 //     ]).then(function(user) {
 //       Artist = user.Artist
-    console.log(user.Artist) // user. Artist will output in the format for scraping
+    //console.log(user.Artist) // user. Artist will output in the format for scraping
     Artist="Tyler the creator" //Uncomment and fill in this variable if you want to manually input the artist and not type it
     request.get("https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist="+Artist+"&&api_key="+LastFmAPIKey+"&format=json", function(error, response, body) {
       
